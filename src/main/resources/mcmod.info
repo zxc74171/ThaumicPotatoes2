@@ -1,0 +1,16 @@
+[
+{
+  "modid": "thaumicpotatoes",
+  "name": "Thaumic Potatoes 2",
+  "description": "The story of a player who attempts to resurrect the long lost arcane art - Thaumaturgy.",
+  "version": "1.2.0",
+  "mcversion": "1.12",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["zxc74171"],
+  "credits": "zxc74171 with the help of many others",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
