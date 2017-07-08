@@ -1,0 +1,14 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:ravioli"
+    },
+"ingredients": [
+    {
+      "item": "thaumicpotatoes:potadough"
+    },
+    {
+      "item": "minecraft:cooked_beef"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}

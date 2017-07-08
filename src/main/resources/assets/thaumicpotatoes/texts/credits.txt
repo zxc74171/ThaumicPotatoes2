@@ -1,0 +1,37 @@
+[C]===============
+[C]Thaumic Potatoes 2 Credits
+[C]===============
+
+Created by:
+			zxc74171
+
+Game design, programming and graphics:
+			zxc74171
+
+Music and sound:
+			zxc74171
+
+End game narrative:
+			zxc74171
+
+Special Thanks:
+			Azanor
+			_Bedrock_Miner_
+			Choonster
+			McJty
+			majorkatabasis
+			Paul Fulham
+			TehNut
+			The-Fireplace
+			PLAYERNAME
+
+Technologies used:
+			Java by Oracle
+			Minecraft Forge
+
+
+
+
+
+
+"Thaumaturgy...which giveth certain order to make strange works, of the sense to be perceived and of men greatly to be wondered at." - Mathematicall Praeface to Euclid's Elements (1570), John Dee

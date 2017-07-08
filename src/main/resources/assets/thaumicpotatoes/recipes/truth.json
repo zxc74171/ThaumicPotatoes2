@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:truth"},
+  "pattern": [
+    "PPP",
+    "PTP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "minecraft:paper"},
+    "T": {
+      "item": "thaumicpotatoes:record_farewell"}
+    }
+  
+}

@@ -1,0 +1,15 @@
+{
+	"result": {
+		"item": "thaumicpotatoes:vodka"
+	},
+	"ingredients": [{
+			"item": "minecraft:baked_potato"
+		},
+		{
+			"item": "minecraft:sugar"
+		},
+		{
+		"item": "minecraft:glass_pane"}
+],
+	"type": "minecraft:crafting_shapeless"
+}

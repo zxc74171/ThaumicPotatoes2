@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:potatoalloy"},
+  "ingredients": [
+    {
+      "item": "thaumicpotatoes:thaumicpotato"
+    },
+    {
+      "item": "thaumicpotatoes:potadough"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:potadough", "count" : 2
+  },
+  "pattern": [
+    "ABA",
+    "BAB",
+    "ABA"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:potato"},
+    "B": {
+      "item": "minecraft:wheat"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:mashedpotatoes",
+    "data": 0
+  },
+  "ingredients": [
+    {
+      "item": "thaumicpotatoes:potatoshovel",
+      "data": 32767
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}

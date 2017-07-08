@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "minecraft:poisonous_potato",
+    "count": 8},
+
+  "pattern": [
+    "PPP",
+    "PTP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "minecraft:potato"},
+    "T": {
+      "item": "minecraft:spider_eye"}
+    }
+  
+}

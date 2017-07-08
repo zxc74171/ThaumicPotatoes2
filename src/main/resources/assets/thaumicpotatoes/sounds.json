@@ -1,0 +1,9 @@
+{
+    "farewell": {"category": "record", "sounds": [{"name": "thaumicpotatoes:music/farewell", "stream": true}]},
+    "ziemniak_ambient": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:music/ziemniak_ambient", "stream": false}]},
+    "ziemniak_death": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:music/ziemniak_death", "stream": false}]},
+    "ziemniak_hurt": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:music/ziemniak_hurt", "stream": false}]},
+    "poe": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:music/poe", "stream": false}]},
+    "poetaetoe": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:music/poetaetoe", "stream": false}]}
+
+}

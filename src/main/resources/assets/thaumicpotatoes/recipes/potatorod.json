@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:potatorod"},
+  "pattern": [
+    "AWA",
+    "AWA",
+    "KSK"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "thaumicpotatoes:thaumicpotato"},
+    "A": {
+      "item": "thaumicpotatoes:potatoalloy"},
+    "S": {
+      "item": "minecraft:iron_sword"},
+    "K": {
+      "item": "minecraft:diamond_sword"}
+    }
+  
+}

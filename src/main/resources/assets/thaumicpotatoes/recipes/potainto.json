@@ -1,0 +1,24 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:potainto"
+  },
+  "pattern": [
+    "GTG",
+    "SKS",
+    "RSR"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:ender_eye"},
+    "K": {
+      "item": "thaumicpotatoes:eldritchheart"},
+    "S": {
+      "item": "thaumicpotatoes:potatoalloy"},
+    "R": {
+      "item": "thaumicpotatoes:thaumicpotato"},
+    "T": {
+      "item": "minecraft:potato"}
+    
+    }
+}

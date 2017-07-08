@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:potatosoup",
+    "data": 0
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}

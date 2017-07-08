@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:potatolauncher"},
+  "pattern": [
+    "CCP",
+    "RSC",
+    "SRC"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"},
+    "C": {
+      "item": "thaumicpotatoes:carbonator"},
+    "R": {
+      "item": "thaumicpotatoes:potatorod"},
+    "P": {
+      "item": "thaumicpotatoes:thaumicpotato"}
+    }
+  
+}
