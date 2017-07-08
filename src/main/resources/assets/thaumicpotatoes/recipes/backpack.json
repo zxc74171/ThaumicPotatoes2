@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:backpack"
+  },
+  "pattern": [
+    "JWJ",
+    "WBW",
+    "WBW"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:wool",
+      "data": 32767},
+    "J": {
+    "item": "thaumicpotatoes:potatoalloy"
+    },
+    "B": {
+      "item": "thaumicpotatoes:thaumicpotato"
+    }
+  }
+}

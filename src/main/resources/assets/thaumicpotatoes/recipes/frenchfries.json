@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:frenchfries"
+    },
+"ingredients": [
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}

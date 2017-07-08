@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:poisonous_ammo",
+    "count": 8},
+
+  "pattern": [
+    "PPP",
+    "PTP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "minecraft:poisonous_potato"},
+    "T": {
+      "item": "minecraft:iron_ingot"}
+    }
+  
+}

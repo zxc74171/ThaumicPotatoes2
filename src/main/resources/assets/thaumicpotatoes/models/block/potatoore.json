@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "thaumicpotatoes:blocks/potatoore",
+    "down": "thaumicpotatoes:blocks/potatoore",
+    "up": "thaumicpotatoes:blocks/potatoore",
+    "north": "thaumicpotatoes:blocks/potatoore",
+    "east": "thaumicpotatoes:blocks/potatoore",
+    "south": "thaumicpotatoes:blocks/potatoore",
+    "west": "thaumicpotatoes:blocks/potatoore"
+  }
+}

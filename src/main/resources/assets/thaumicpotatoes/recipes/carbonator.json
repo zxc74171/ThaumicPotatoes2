@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:carbonator"},
+  "pattern": [
+    "RBR",
+    "SKS",
+    "RBR"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:baked_potato"},
+    "K": {
+      "item": "thaumicpotatoes:potadough"},
+    "S": {
+      "item": "minecraft:bread"},
+    "R": {
+      "item": "thaumicpotatoes:ravioli"}
+    }
+  
+}

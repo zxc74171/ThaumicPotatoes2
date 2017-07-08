@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:frozenrod"},
+  "pattern": [
+    "ISI",
+    "ASA",
+    "KSK"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:packed_ice"},
+    "A": {
+      "item": "thaumicpotatoes:carbonator"},
+    "S": {
+      "item": "thaumicpotatoes:potatorod"},
+    "K": {
+      "item": "minecraft:diamond_block"}
+    }
+  
+}

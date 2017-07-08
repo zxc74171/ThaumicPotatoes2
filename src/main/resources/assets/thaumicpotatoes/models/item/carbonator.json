@@ -1,0 +1,6 @@
+{
+    "parent":"thaumicpotatoes:item/thaumicpotato",
+    "textures": {
+        "layer0":"thaumicpotatoes:items/carbonator"
+    }
+}
