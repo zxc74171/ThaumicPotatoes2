@@ -9,7 +9,6 @@ import java.util.List;
 import com.zxc74171.thaumicpotatoes.ending.GuiEnding;
 import com.zxc74171.thaumicpotatoes.handlers.FuelHandler;
 import com.zxc74171.thaumicpotatoes.handlers.GuiHandler;
-import com.zxc74171.thaumicpotatoes.handlers.RegistryHandler;
 import com.zxc74171.thaumicpotatoes.handlers.SmeltingHandler;
 import com.zxc74171.thaumicpotatoes.init.ModBlocks;
 import com.zxc74171.thaumicpotatoes.init.ModEntities;
@@ -23,10 +22,12 @@ import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.MusicTicker;
 import net.minecraft.client.audio.MusicTicker.MusicType;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -58,11 +59,9 @@ public class ThaumicPotatoes2
 
     @EventHandler
 	public static void preInit(FMLPreInitializationEvent event) {
-    	MinecraftForge.EVENT_BUS.register(new RegistryHandler());
-		ModEntities.init();
+		new ModItems();
 		SmeltingHandler.registerSmeltingRecipes();
-		ModEntities.initModels();
-		
+		proxy.preInit(event);
 	}
     
     @EventHandler
@@ -72,7 +71,6 @@ public class ThaumicPotatoes2
         GameRegistry.registerWorldGenerator(new TP2WorldGen(), 0);
         NetworkRegistry.INSTANCE.registerGuiHandler(ThaumicPotatoes2.instance, new GuiHandler());
         Utils.getLogger().info("Initialize");
-        
         
 
     }
@@ -100,11 +98,18 @@ public class ThaumicPotatoes2
 			event.getRegistry().registerAll(
 					blocks.POTATOORE.createItemBlock()
 			);
+			event.getRegistry().registerAll(ModItems.ITEMS);
 		}
 
 		@SubscribeEvent
 		public static void registerModels(ModelRegistryEvent event) {
 			blocks.POTATOORE.initItemModel();
+			
+			for (int i = 0; i < ModItems.ITEMS.length; i++) {
+				Item item = ModItems.ITEMS[i];
+				ModelLoader.setCustomModelResourceLocation(item, 0,
+						new ModelResourceLocation(item.getRegistryName(), "inventory"));
+			}
 		}
 		
 
