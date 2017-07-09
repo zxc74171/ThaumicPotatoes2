@@ -31,7 +31,7 @@ import org.apache.logging.log4j.Logger;
 public class GuiEnding extends GuiScreen
 {
     private static final Logger LOGGER = LogManager.getLogger();
-    private static final ResourceLocation MINECRAFT_LOGO = new ResourceLocation("thaumicpotatoes:textures/misc/minecraft.png");
+    private static final ResourceLocation MINECRAFT_LOGO = new ResourceLocation("thaumicpotatoes:textures/misc/tp.png");
     private static final ResourceLocation VIGNETTE_TEXTURE = new ResourceLocation("textures/misc/vignette.png");
     private final boolean poem;
     private final Runnable onFinished;
@@ -215,8 +215,7 @@ public class GuiEnding extends GuiScreen
         this.mc.getTextureManager().bindTexture(MINECRAFT_LOGO);
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
         GlStateManager.enableAlpha();
-        this.drawTexturedModalRect(j, k, 0, 0, 155, 44);
-        this.drawTexturedModalRect(j + 155, k, 0, 45, 155, 44);
+        this.drawTexturedModalRect(j+10, k-135, 0, 0, 250, 170);
         GlStateManager.disableAlpha();
         int l = k + 100;
 

@@ -3,7 +3,10 @@ package com.zxc74171.thaumicpotatoes.proxy;
 import javax.annotation.Nonnull;
 
 import com.zxc74171.thaumicpotatoes.handlers.GuiHandler;
+import com.zxc74171.thaumicpotatoes.handlers.RegistryHandler;
+import com.zxc74171.thaumicpotatoes.handlers.SmeltingHandler;
 import com.zxc74171.thaumicpotatoes.init.ModEntities;
+import com.zxc74171.thaumicpotatoes.init.ModItems;
 import com.zxc74171.thaumicpotatoes.items.ItemTruth;
 import com.zxc74171.thaumicpotatoes.worldgen.TP2WorldGen;
 import com.zxc74171.thaumicpotatoes.ThaumicPotatoes2;
@@ -15,6 +18,7 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.translation.I18n;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;

@@ -7,6 +7,7 @@ import amerifrance.guideapi.api.impl.Book;
 import amerifrance.guideapi.api.impl.abstraction.CategoryAbstract;
 import amerifrance.guideapi.api.impl.abstraction.EntryAbstract;
 import amerifrance.guideapi.category.CategoryItemStack;
+import amerifrance.guideapi.category.CategoryResourceLocation;
 import amerifrance.guideapi.entry.EntryItemStack;
 import amerifrance.guideapi.page.PageFurnaceRecipe;
 import amerifrance.guideapi.page.PageIRecipe;
@@ -93,7 +94,7 @@ public class GuideBookVol2 implements IGuideBook {
         
         
         List<CategoryAbstract> categories = new ArrayList<CategoryAbstract>();
-        categories.add(new CategoryItemStack(entries, proxy.translateToLocal("cat1"), new ItemStack(ModItems.ICON_CAT1)));
+        categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat1"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat1.png")));
         
         
 
@@ -125,7 +126,7 @@ public class GuideBookVol2 implements IGuideBook {
 
         entries.put(new ResourceLocation(Reference.MODID, "2.4"), new EntryItemStack(pages, proxy.translateToLocal("entry24"), new ItemStack(ModItems.FRENCHFRIES)));
              
-        categories.add(new CategoryItemStack(entries, proxy.translateToLocal("cat2"), new ItemStack(ModItems.ICON_CAT2)));
+        categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat2"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat2.png")));
 
  entries = Maps.newLinkedHashMap();
  pages = Lists.newArrayList();
@@ -158,7 +159,7 @@ public class GuideBookVol2 implements IGuideBook {
         entries.put(new ResourceLocation(Reference.MODID, "3.3"), new EntryItemStack(pages, proxy.translateToLocal("entry33"), new ItemStack(ModItems.BACKPACK)));
  
         
-        categories.add(new CategoryItemStack(entries, proxy.translateToLocal("cat3"), new ItemStack(ModItems.ICON_CAT3)));
+        categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat3"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat3.png")));
 
  entries = Maps.newLinkedHashMap();
  pages = Lists.newArrayList();
@@ -168,7 +169,7 @@ public class GuideBookVol2 implements IGuideBook {
 
         entries.put(new ResourceLocation(Reference.MODID, "4.1"), new EntryItemStack(pages, proxy.translateToLocal("entry41"), new ItemStack(ModItems.POTATOROD)));
              
-        categories.add(new CategoryItemStack(entries, proxy.translateToLocal("cat4"), new ItemStack(ModItems.ICON_CAT4)));
+        categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat4"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat4.png")));
 
  entries = Maps.newLinkedHashMap();
  pages = Lists.newArrayList();
@@ -183,7 +184,7 @@ public class GuideBookVol2 implements IGuideBook {
         pages.add(new PageText(proxy.translateToLocal("guide.5.2.1")));
         entries.put(new ResourceLocation(Reference.MODID, "5.2"), new EntryItemStack(pages, proxy.translateToLocal("entry52"), new ItemStack(Items.ENDER_EYE)));
 
-        categories.add(new CategoryItemStack(entries, proxy.translateToLocal("cat5"), new ItemStack(ModItems.ICON_CAT5)));
+        categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat5"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat5.png")));
 
 
         

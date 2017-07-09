@@ -58,9 +58,7 @@ public class ThaumicPotatoes2
 
     @EventHandler
 	public static void preInit(FMLPreInitializationEvent event) {
-		MinecraftForge.EVENT_BUS.register(new RegistryHandler());
-		new ModItems();
-		
+    	MinecraftForge.EVENT_BUS.register(new RegistryHandler());
 		ModEntities.init();
 		SmeltingHandler.registerSmeltingRecipes();
 		ModEntities.initModels();

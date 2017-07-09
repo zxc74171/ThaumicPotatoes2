@@ -7,6 +7,7 @@ import amerifrance.guideapi.api.impl.Book;
 import amerifrance.guideapi.api.impl.abstraction.CategoryAbstract;
 import amerifrance.guideapi.api.impl.abstraction.EntryAbstract;
 import amerifrance.guideapi.category.CategoryItemStack;
+import amerifrance.guideapi.category.CategoryResourceLocation;
 import amerifrance.guideapi.entry.EntryItemStack;
 import amerifrance.guideapi.page.PageFurnaceRecipe;
 import amerifrance.guideapi.page.PageIRecipe;
@@ -93,8 +94,7 @@ public class GuideBookVol1 implements IGuideBook {
         
         
         List<CategoryAbstract> categories = new ArrayList<CategoryAbstract>();
-        categories.add(new CategoryItemStack(entries, proxy.translateToLocal("cat1"), new ItemStack(ModItems.ICON_CAT1)));
-        
+        categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat1"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat1.png")));    
         
 
  entries = Maps.newLinkedHashMap();
@@ -111,7 +111,7 @@ public class GuideBookVol1 implements IGuideBook {
         pages.add(new PageText(proxy.translateToLocal("guide.2.2.2")));
         entries.put(new ResourceLocation(Reference.MODID, "2.2"), new EntryItemStack(pages, proxy.translateToLocal("entry22"), new ItemStack(ModItems.RAVIOLI)));
              
-        categories.add(new CategoryItemStack(entries, proxy.translateToLocal("cat2"), new ItemStack(ModItems.ICON_CAT2)));
+        categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat2"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat2.png")));
         
         // Setup the book's base information
         guideBookv1 = new Book();

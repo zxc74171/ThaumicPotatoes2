@@ -93,37 +93,14 @@ public class ModItems {
 		public static final Item POTADOUGH = new Item().setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("potadough")
 				.setUnlocalizedName("potadough");
 		
-		public static final Item ICON_CAT1 = new Item().setRegistryName("icon_cat1")
-				.setUnlocalizedName("icon");
-		public static final Item ICON_CAT2 = new Item().setRegistryName("icon_cat2")
-				.setUnlocalizedName("icon");
-		public static final Item ICON_CAT3 = new Item().setRegistryName("icon_cat3")
-				.setUnlocalizedName("icon");
-		public static final Item ICON_CAT4 = new Item().setRegistryName("icon_cat4")
-				.setUnlocalizedName("icon");
-		public static final Item ICON_CAT5 = new Item().setRegistryName("icon_cat5")
-				.setUnlocalizedName("icon");
-		public static final Item ICON_CAT6 = new Item().setRegistryName("icon_cat6")
-				.setUnlocalizedName("icon");
 
 
 		public static final Item RECORD_FAREWELL = new ItemMusicDisc("farewell", ModSoundEvents.FAREWELL).setCreativeTab(ModCreativeTabs.TABS_TP2).setUnlocalizedName("record_farewell").setRegistryName("record_farewell");
 			
 		//DON'T FORGET TO ADD YOUR NEW SHIT HERE DAMMIT
-		public static final Item[] ITEMS = new Item[] {THAUMIC_POTATO, POTATO_ALLOY, BACKPACK, POTATOROD, POTATOPICKAXE, POTATOHOE, POTATOSHOVEL, TAINTED_CORE, PETRIFIED_POTATO, POTATO_SOUP, RAVIOLI, VODKA, FRENCHFRIES, CARBONATOR, MASHEDPOTATOES, POTATO_ALLOY, POTAINTO, ELDRITCH_HEART, POTADOUGH, ICON_CAT1, ICON_CAT2, ICON_CAT3, ICON_CAT4, ICON_CAT5, ICON_CAT6, FROZENROD, RECORD_FAREWELL, TRUTH, POTATO_AMMO, POISONOUS_AMMO, POTATO_LAUNCHER};
+		public static final Item[] ITEMS = new Item[] {THAUMIC_POTATO, POTATO_ALLOY, BACKPACK, POTATOROD, POTATOPICKAXE, POTATOHOE, POTATOSHOVEL, TAINTED_CORE, PETRIFIED_POTATO, POTATO_SOUP, RAVIOLI, VODKA, FRENCHFRIES, CARBONATOR, MASHEDPOTATOES, POTATO_ALLOY, POTAINTO, ELDRITCH_HEART, POTADOUGH, FROZENROD, RECORD_FAREWELL, TRUTH, POTATO_AMMO, POISONOUS_AMMO, POTATO_LAUNCHER};
 	
 
     
 		
-    
-    public static void registerRender(Item item) {
-        ModelLoader.setCustomModelResourceLocation(item,
-                0,
-                new ModelResourceLocation(new ResourceLocation(Reference.MODID,
-                        item.getUnlocalizedName().substring(5)),
-                        "inventory"));
-        Utils.getLogger().info("Register render for " + item.getUnlocalizedName().substring(5));
-    }
-    
-    
 }
