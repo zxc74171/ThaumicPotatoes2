@@ -1,12 +1,27 @@
 package com.zxc74171.thaumicpotatoes.guidebooks;
 
+import static com.zxc74171.thaumicpotatoes.ThaumicPotatoes2.proxy;
+
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.Nonnull;
+
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.zxc74171.thaumicpotatoes.Reference;
+import com.zxc74171.thaumicpotatoes.init.ModCreativeTabs;
+import com.zxc74171.thaumicpotatoes.init.ModItems;
+
 import amerifrance.guideapi.api.GuideAPI;
 import amerifrance.guideapi.api.IGuideBook;
 import amerifrance.guideapi.api.IPage;
 import amerifrance.guideapi.api.impl.Book;
 import amerifrance.guideapi.api.impl.abstraction.CategoryAbstract;
 import amerifrance.guideapi.api.impl.abstraction.EntryAbstract;
-import amerifrance.guideapi.category.CategoryItemStack;
 import amerifrance.guideapi.category.CategoryResourceLocation;
 import amerifrance.guideapi.entry.EntryItemStack;
 import amerifrance.guideapi.page.PageFurnaceRecipe;
@@ -18,24 +33,9 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
-
-import javax.annotation.Nonnull;
-
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.zxc74171.thaumicpotatoes.Reference;
-import com.zxc74171.thaumicpotatoes.init.ModCreativeTabs;
-import com.zxc74171.thaumicpotatoes.init.ModItems;
-
-import java.awt.*;
-import java.util.*;
-import java.util.List;
-import static com.zxc74171.thaumicpotatoes.ThaumicPotatoes2.proxy;
 
 
 @amerifrance.guideapi.api.GuideBook
@@ -101,15 +101,13 @@ public class GuideBookVol3 implements IGuideBook {
  entries = Maps.newLinkedHashMap();
  pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.2.1.1")));
-        pages.add(PageIRecipe.newShaped(new ItemStack(Items.ACACIA_BOAT), "X X", "XXX", 'X', "plankWood"));
         pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTATO_SOUP), "AB ", "C  ", "   ", 'A', Items.BAKED_POTATO, 'B', Items.MILK_BUCKET, 'C', Items.WHEAT_SEEDS));
         entries.put(new ResourceLocation(Reference.MODID, "2.1"), new EntryItemStack(pages, proxy.translateToLocal("entry21"), new ItemStack(ModItems.POTATO_SOUP)));
         
         pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.2.2.1")));
         pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTADOUGH, 2), "KSK", "SKS", "KSK", 'K', Items.BAKED_POTATO, 'S', Items.WHEAT));
-        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.RAVIOLI), "A  ", "B  ", "   ", 'A', ModItems.POTADOUGH, 'B', Items.COOKED_BEEF));
-        pages.add(new PageText(proxy.translateToLocal("guide.2.2.2")));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.RAVIOLI), "AB ", "   ", "   ", 'A', ModItems.POTADOUGH, 'B', "dontLewdTheDragonLoli"));
         entries.put(new ResourceLocation(Reference.MODID, "2.2"), new EntryItemStack(pages, proxy.translateToLocal("entry22"), new ItemStack(ModItems.RAVIOLI)));
 
         pages = Lists.newArrayList();
@@ -172,14 +170,14 @@ public class GuideBookVol3 implements IGuideBook {
  entries = Maps.newLinkedHashMap();
  pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.4.1.1")));
-        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTATOROD), "AWA","AWA","KSK",'A', ModItems.THAUMIC_POTATO, 'S', Items.IRON_SWORD, 'W', ModItems.POTATO_ALLOY, 'K', Items.DIAMOND_SWORD));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTATOROD), "AWA","AWA","KSK",'A', ModItems.THAUMIC_POTATO, 'S', Items.IRON_SWORD, 'W', ModItems.POTATO_ALLOY, 'K', Items.DIAMOND));
         pages.add(new PageText(proxy.translateToLocal("guide.4.1.2")));
 
         entries.put(new ResourceLocation(Reference.MODID, "4.1"), new EntryItemStack(pages, proxy.translateToLocal("entry41"), new ItemStack(ModItems.POTATOROD)));
         
         pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.4.2.1")));
-        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.FROZENROD), "ISI","ASA","KSK",'I', Blocks.PACKED_ICE, 'A', ModItems.CARBONATOR, 'S', ModItems.POTATOROD, 'K', Blocks.DIAMOND_BLOCK));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.FROZENROD), "ISI","ASA","KSK",'I', Blocks.PACKED_ICE, 'A', ModItems.CARBONATOR, 'S', ModItems.POTATOROD, 'K', Items.DIAMOND_SWORD));
         pages.add(new PageText(proxy.translateToLocal("guide.4.2.2")));
 
         entries.put(new ResourceLocation(Reference.MODID, "4.2"), new EntryItemStack(pages, proxy.translateToLocal("entry42"), new ItemStack(ModItems.FROZENROD)));
@@ -188,28 +186,27 @@ public class GuideBookVol3 implements IGuideBook {
         pages.add(new PageText(proxy.translateToLocal("guide.4.3.1")));
         pages.add(new PageText(proxy.translateToLocal("guide.4.3.2")));
         pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTATO_LAUNCHER), "CCP","RSC","SRC",'S', Items.STICK, 'C', ModItems.CARBONATOR, 'R', ModItems.POTATOROD, 'P', ModItems.THAUMIC_POTATO));
-        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTATO_AMMO, 8), "PPP","PIP","PPP",'P', Items.POTATO, 'I', Items.IRON_INGOT));
-        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POISONOUS_AMMO, 8), "PPP","PIP","PPP",'P', Items.POISONOUS_POTATO, 'I', Items.IRON_INGOT));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.AMMO_NORMAL, 8), "PPP","PIP","PPP",'P', Items.POTATO, 'I', Items.IRON_INGOT));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.AMMO_POISONOUS, 8), "PPP","PIP","PPP",'P', Items.POISONOUS_POTATO, 'I', Items.IRON_INGOT));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.AMMO_BAKED, 8), "PPP","PIP","PPP",'P', Items.BAKED_POTATO, 'I', Items.IRON_INGOT));
         pages.add(new PageText(proxy.translateToLocal("guide.4.3.3")));
 
         entries.put(new ResourceLocation(Reference.MODID, "4.3"), new EntryItemStack(pages, proxy.translateToLocal("entry43"), new ItemStack(ModItems.POTATO_LAUNCHER)));
   
-        
+        pages = Lists.newArrayList();
+        pages.add(new PageText(proxy.translateToLocal("guide.4.4.1")));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTATO_SHEARS), "CRT","CPR","SCC",'S', ModItems.POTATO_LAUNCHER,'T', ModItems.RECORD_FAREWELL, 'C', ModItems.POTATO_ALLOY, 'R', ModItems.POTATOROD, 'P', ModItems.FROZENROD));
+        pages.add(new PageText(proxy.translateToLocal("guide.4.4.2")));
+        pages.add(new PageText(proxy.translateToLocal("guide.4.4.3")));
+        pages.add(new PageText(proxy.translateToLocal("guide.4.4.4")));
+        pages.add(new PageText(proxy.translateToLocal("guide.4.4.5")));
+
+        entries.put(new ResourceLocation(Reference.MODID, "4.4"), new EntryItemStack(pages, proxy.translateToLocal("entry44"), new ItemStack(ModItems.POTATO_SHEARS)));
+ 
         categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat4"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat4.png")));
 
- entries = Maps.newLinkedHashMap();
- pages = Lists.newArrayList();
-        pages.add(new PageText(proxy.translateToLocal("guide.5.1.1")));
-        pages.add(new PageText(proxy.translateToLocal("guide.5.1.2")));
-        pages.add(new PageText(proxy.translateToLocal("guide.5.1.3")));
-        pages.add(new PageImage(new ResourceLocation(Reference.MODID, "textures/guide/vol3.png")));
-        pages.add(new PageImage(new ResourceLocation(Reference.MODID, "textures/guide/patata.png")));
-        entries.put(new ResourceLocation(Reference.MODID, "5.1"), new EntryItemStack(pages, proxy.translateToLocal("entry51"), new ItemStack(Items.BAKED_POTATO)));
+        entries = Maps.newLinkedHashMap();
         
-        pages = Lists.newArrayList();
-        pages.add(new PageText(proxy.translateToLocal("guide.5.2.1")));
-        entries.put(new ResourceLocation(Reference.MODID, "5.2"), new EntryItemStack(pages, proxy.translateToLocal("entry52"), new ItemStack(Items.ENDER_EYE)));
-
         pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.5.3.1")));
         pages.add(new PageText(proxy.translateToLocal("guide.5.3.2")));
@@ -224,6 +221,16 @@ public class GuideBookVol3 implements IGuideBook {
 
         entries.put(new ResourceLocation(Reference.MODID, "5.4"), new EntryItemStack(pages, proxy.translateToLocal("entry54"), new ItemStack(ModItems.TAINTED_CORE)));
 
+ 
+        pages = Lists.newArrayList();
+ 
+        pages.add(new PageText(proxy.translateToLocal("guide.5.1.1")));
+        pages.add(new PageText(proxy.translateToLocal("guide.5.1.2")));
+        pages.add(new PageText(proxy.translateToLocal("guide.5.1.3")));
+        pages.add(new PageImage(new ResourceLocation(Reference.MODID, "textures/guide/vol3.png")));
+        pages.add(new PageImage(new ResourceLocation(Reference.MODID, "textures/guide/patata.png")));
+        entries.put(new ResourceLocation(Reference.MODID, "5.1"), new EntryItemStack(pages, proxy.translateToLocal("entry51"), new ItemStack(ModItems.ELDRITCH_HEART)));
+        
         categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat5"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat5.png")));
 
  entries = Maps.newLinkedHashMap();
@@ -267,6 +274,6 @@ public class GuideBookVol3 implements IGuideBook {
     @Override
     public void handlePost(ItemStack bookStack) {
         // Register a recipe so player's can obtain the book
-    	ForgeRegistries.RECIPES.register(new ShapelessOreRecipe(null, bookStack, Items.BOOK, ModItems.BACKPACK, ModItems.POTATO_ALLOY, Items.BLAZE_ROD).setRegistryName(guideBookv3.getRegistryName()));
+    	ForgeRegistries.RECIPES.register(new ShapelessOreRecipe(null, bookStack, Items.BOOK, ModItems.BACKPACK, ModItems.ELDRITCH_HEART, Items.BLAZE_ROD).setRegistryName(guideBookv3.getRegistryName()));
     }
 }

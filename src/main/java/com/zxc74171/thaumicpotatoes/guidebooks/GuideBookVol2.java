@@ -1,12 +1,27 @@
 package com.zxc74171.thaumicpotatoes.guidebooks;
 
+import static com.zxc74171.thaumicpotatoes.ThaumicPotatoes2.proxy;
+
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.Nonnull;
+
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.zxc74171.thaumicpotatoes.Reference;
+import com.zxc74171.thaumicpotatoes.init.ModCreativeTabs;
+import com.zxc74171.thaumicpotatoes.init.ModItems;
+
 import amerifrance.guideapi.api.GuideAPI;
 import amerifrance.guideapi.api.IGuideBook;
 import amerifrance.guideapi.api.IPage;
 import amerifrance.guideapi.api.impl.Book;
 import amerifrance.guideapi.api.impl.abstraction.CategoryAbstract;
 import amerifrance.guideapi.api.impl.abstraction.EntryAbstract;
-import amerifrance.guideapi.category.CategoryItemStack;
 import amerifrance.guideapi.category.CategoryResourceLocation;
 import amerifrance.guideapi.entry.EntryItemStack;
 import amerifrance.guideapi.page.PageFurnaceRecipe;
@@ -18,24 +33,9 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
-
-import javax.annotation.Nonnull;
-
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.zxc74171.thaumicpotatoes.Reference;
-import com.zxc74171.thaumicpotatoes.init.ModCreativeTabs;
-import com.zxc74171.thaumicpotatoes.init.ModItems;
-
-import java.awt.*;
-import java.util.*;
-import java.util.List;
-import static com.zxc74171.thaumicpotatoes.ThaumicPotatoes2.proxy;
 
 
 @amerifrance.guideapi.api.GuideBook
@@ -101,15 +101,13 @@ public class GuideBookVol2 implements IGuideBook {
  entries = Maps.newLinkedHashMap();
  pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.2.1.1")));
-        pages.add(PageIRecipe.newShaped(new ItemStack(Items.ACACIA_BOAT), "X X", "XXX", 'X', "plankWood"));
         pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTATO_SOUP), "AB ", "C  ", "   ", 'A', Items.BAKED_POTATO, 'B', Items.MILK_BUCKET, 'C', Items.WHEAT_SEEDS));
         entries.put(new ResourceLocation(Reference.MODID, "2.1"), new EntryItemStack(pages, proxy.translateToLocal("entry21"), new ItemStack(ModItems.POTATO_SOUP)));
         
         pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.2.2.1")));
         pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTADOUGH), "KSK", "SKS", "KSK", 'K', Items.BAKED_POTATO, 'S', Items.WHEAT));
-        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.RAVIOLI), "A  ", "B  ", "   ", 'A', ModItems.POTADOUGH, 'B', Items.COOKED_BEEF));
-        pages.add(new PageText(proxy.translateToLocal("guide.2.2.2")));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.RAVIOLI), "AB ", "   ", "   ", 'A', ModItems.POTADOUGH, 'B', "dontLewdTheDragonLoli"));
         entries.put(new ResourceLocation(Reference.MODID, "2.2"), new EntryItemStack(pages, proxy.translateToLocal("entry22"), new ItemStack(ModItems.RAVIOLI)));
 
         pages = Lists.newArrayList();
@@ -164,26 +162,47 @@ public class GuideBookVol2 implements IGuideBook {
  entries = Maps.newLinkedHashMap();
  pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.4.1.1")));
-        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTATOROD), "AWA","AWA","KSK",'A', ModItems.THAUMIC_POTATO, 'S', Items.IRON_SWORD, 'W', ModItems.POTATO_ALLOY, 'K', Items.DIAMOND_SWORD));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTATOROD), "AWA","AWA","KSK",'A', ModItems.THAUMIC_POTATO, 'S', Items.IRON_SWORD, 'W', ModItems.POTATO_ALLOY, 'K', Items.DIAMOND));
         pages.add(new PageText(proxy.translateToLocal("guide.4.1.2")));
 
         entries.put(new ResourceLocation(Reference.MODID, "4.1"), new EntryItemStack(pages, proxy.translateToLocal("entry41"), new ItemStack(ModItems.POTATOROD)));
              
+        pages = Lists.newArrayList();
+        pages.add(new PageText(proxy.translateToLocal("guide.4.2.1")));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.FROZENROD), "ISI","ASA","KSK",'I', Blocks.PACKED_ICE, 'A', ModItems.CARBONATOR, 'S', ModItems.POTATOROD, 'K', Items.DIAMOND_SWORD));
+        pages.add(new PageText(proxy.translateToLocal("guide.4.2.2")));
+
+        entries.put(new ResourceLocation(Reference.MODID, "4.2"), new EntryItemStack(pages, proxy.translateToLocal("entry42"), new ItemStack(ModItems.FROZENROD)));
+
+        
         categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat4"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat4.png")));
 
  entries = Maps.newLinkedHashMap();
- pages = Lists.newArrayList();
+ 
+        pages = Lists.newArrayList();
+        pages.add(new PageText(proxy.translateToLocal("guide.5.3.1")));
+        pages.add(new PageText(proxy.translateToLocal("guide.5.3.2")));
+        pages.add(new PageText(proxy.translateToLocal("guide.5.3.3")));
+        pages.add(new PageText(proxy.translateToLocal("guide.5.3.4")));
+        entries.put(new ResourceLocation(Reference.MODID, "5.3"), new EntryItemStack(pages, proxy.translateToLocal("entry53"), new ItemStack(Items.WRITTEN_BOOK)));
+
+        pages = Lists.newArrayList();
+        pages.add(new PageText(proxy.translateToLocal("guide.5.4.1")));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.TAINTED_CORE), "GEG","SKS","GSG",'S', ModItems.CARBONATOR, 'K', ModItems.THAUMIC_POTATO, 'G', Items.POISONOUS_POTATO, 'E', Items.ENDER_EYE));
+        pages.add(new PageImage(new ResourceLocation(Reference.MODID, "textures/guide/text.png")));
+
+        entries.put(new ResourceLocation(Reference.MODID, "5.4"), new EntryItemStack(pages, proxy.translateToLocal("entry54"), new ItemStack(ModItems.TAINTED_CORE)));
+
+ 
+        pages = Lists.newArrayList();
+ 
         pages.add(new PageText(proxy.translateToLocal("guide.5.1.1")));
         pages.add(new PageText(proxy.translateToLocal("guide.5.1.2")));
         pages.add(new PageText(proxy.translateToLocal("guide.5.1.3")));
         pages.add(new PageImage(new ResourceLocation(Reference.MODID, "textures/guide/vol3.png")));
         pages.add(new PageImage(new ResourceLocation(Reference.MODID, "textures/guide/patata.png")));
-        entries.put(new ResourceLocation(Reference.MODID, "5.1"), new EntryItemStack(pages, proxy.translateToLocal("entry51"), new ItemStack(Items.BAKED_POTATO)));
+        entries.put(new ResourceLocation(Reference.MODID, "5.1"), new EntryItemStack(pages, proxy.translateToLocal("entry51"), new ItemStack(ModItems.ELDRITCH_HEART)));
         
-        pages = Lists.newArrayList();
-        pages.add(new PageText(proxy.translateToLocal("guide.5.2.1")));
-        entries.put(new ResourceLocation(Reference.MODID, "5.2"), new EntryItemStack(pages, proxy.translateToLocal("entry52"), new ItemStack(Items.ENDER_EYE)));
-
         categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat5"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat5.png")));
 
 

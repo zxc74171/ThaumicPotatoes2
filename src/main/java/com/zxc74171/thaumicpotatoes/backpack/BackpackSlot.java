@@ -1,6 +1,5 @@
 package com.zxc74171.thaumicpotatoes.backpack;
 
-import com.zxc74171.thaumicpotatoes.backpack.ItemBackpack;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;

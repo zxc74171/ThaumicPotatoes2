@@ -1,34 +1,20 @@
 package com.zxc74171.thaumicpotatoes;
 
-
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.List;
-
-import com.zxc74171.thaumicpotatoes.ending.GuiEnding;
 import com.zxc74171.thaumicpotatoes.handlers.FuelHandler;
 import com.zxc74171.thaumicpotatoes.handlers.GuiHandler;
 import com.zxc74171.thaumicpotatoes.handlers.SmeltingHandler;
 import com.zxc74171.thaumicpotatoes.init.ModBlocks;
-import com.zxc74171.thaumicpotatoes.init.ModEntities;
 import com.zxc74171.thaumicpotatoes.init.ModItems;
+import com.zxc74171.thaumicpotatoes.oredict.OreDict;
 import com.zxc74171.thaumicpotatoes.proxy.CommonProxy;
-import com.zxc74171.thaumicpotatoes.sounds.ModSoundEvents;
 import com.zxc74171.thaumicpotatoes.util.Utils;
 import com.zxc74171.thaumicpotatoes.worldgen.TP2WorldGen;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.audio.MusicTicker;
-import net.minecraft.client.audio.MusicTicker.MusicType;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.util.SoundEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -38,7 +24,6 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
-import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(dependencies="required-before:guideapi", modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
@@ -61,6 +46,7 @@ public class ThaumicPotatoes2
 	public static void preInit(FMLPreInitializationEvent event) {
 		new ModItems();
 		SmeltingHandler.registerSmeltingRecipes();
+		OreDict.init();
 		proxy.preInit(event);
 	}
     

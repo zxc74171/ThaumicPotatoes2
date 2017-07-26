@@ -1,10 +1,5 @@
 package com.zxc74171.thaumicpotatoes.entities;
 
-import com.zxc74171.thaumicpotatoes.entities.EntityPotatoMobProjectile;
-import com.zxc74171.thaumicpotatoes.entities.RenderEntityPotatoMobProjectile;
-import com.zxc74171.thaumicpotatoes.entities.RenderEntityPotatoMobProjectile.Factory;
-import com.zxc74171.thaumicpotatoes.init.ModItems;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderItem;

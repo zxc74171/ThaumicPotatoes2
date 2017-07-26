@@ -1,15 +1,13 @@
 package com.zxc74171.thaumicpotatoes.items;
 
-import java.util.ArrayList;
-
 import javax.annotation.Nullable;
 
 import com.zxc74171.thaumicpotatoes.entities.EntityAmmo;
-import com.zxc74171.thaumicpotatoes.entities.EntityAmmoPoisonous;
+import com.zxc74171.thaumicpotatoes.entities.EntityAmmoBaked;
 import com.zxc74171.thaumicpotatoes.entities.EntityAmmoNormal;
+import com.zxc74171.thaumicpotatoes.entities.EntityAmmoPoisonous;
 import com.zxc74171.thaumicpotatoes.potatolauncher.Ammos;
 import com.zxc74171.thaumicpotatoes.potatolauncher.LauncherProperties;
-import com.zxc74171.thaumicpotatoes.sounds.ModSoundEvents;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -178,6 +176,8 @@ public class ItemLauncher extends Item
 			return new EntityAmmoNormal(worldIn, entityplayer, this.ammo);
 		case POISONOUS:
 			return new EntityAmmoPoisonous(worldIn, entityplayer, this.ammo);
+		case BAKED:
+			return new EntityAmmoBaked(worldIn, entityplayer, this.ammo);
 		default:
 			return new EntityAmmoNormal(worldIn, entityplayer, this.ammo);
     	}

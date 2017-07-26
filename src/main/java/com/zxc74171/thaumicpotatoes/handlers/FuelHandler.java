@@ -1,6 +1,7 @@
 package com.zxc74171.thaumicpotatoes.handlers;
 
 import com.zxc74171.thaumicpotatoes.init.ModItems;
+
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.IFuelHandler;
 

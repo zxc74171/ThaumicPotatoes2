@@ -1,7 +1,5 @@
 package com.zxc74171.thaumicpotatoes.backpack;
 
-import com.zxc74171.thaumicpotatoes.backpack.ContainerBackpack;
-import com.zxc74171.thaumicpotatoes.backpack.InventoryBackpack;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.EntityPlayer;
@@ -26,6 +24,13 @@ public class GuiBackpack extends GuiContainer {
         int lvt_4_1_ = lvt_3_1_ - 108;
         this.inventoryRows = rucksackInventory.getSizeInventory() / 9;
         this.ySize = lvt_4_1_ + this.inventoryRows * 18;
+    }
+    
+    public void drawScreen(int mouseX, int mouseY, float partialTicks)
+    {
+        this.drawDefaultBackground();
+        super.drawScreen(mouseX, mouseY, partialTicks);
+        this.renderHoveredToolTip(mouseX, mouseY);
     }
 
     protected void drawGuiContainerForegroundLayer(int p_drawGuiContainerForegroundLayer_1_, int p_drawGuiContainerForegroundLayer_2_) {

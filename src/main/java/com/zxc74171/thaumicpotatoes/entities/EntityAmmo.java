@@ -8,16 +8,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 
 public class EntityAmmo extends EntityArrow implements IEntityAdditionalSpawnData{
@@ -62,11 +56,13 @@ public class EntityAmmo extends EntityArrow implements IEntityAdditionalSpawnDat
 	protected ItemStack getArrowStack() {
 		switch (this.bolt) {
 		case NORMAL:
-			return new ItemStack(ModItems.POTATO_AMMO);
+			return new ItemStack(ModItems.AMMO_NORMAL);
 		case POISONOUS:
-			return new ItemStack(ModItems.POISONOUS_AMMO);
+			return new ItemStack(ModItems.AMMO_POISONOUS);
+		case BAKED:
+			return new ItemStack(ModItems.AMMO_BAKED);
 		default:
-			return new ItemStack(ModItems.POTATO_AMMO);
+			return new ItemStack(ModItems.AMMO_NORMAL);
 		}
 	}
 	
@@ -76,6 +72,10 @@ public class EntityAmmo extends EntityArrow implements IEntityAdditionalSpawnDat
 		if (this.bolt == Ammos.POISONOUS){
 	        PotionEffect potioneffect = new PotionEffect(MobEffects.POISON, 100, 4);
 	        living.addPotionEffect(potioneffect);
+		}
+		
+		if (this.bolt == Ammos.BAKED){
+	        living.setFire(5);;
 		}
 	}
 

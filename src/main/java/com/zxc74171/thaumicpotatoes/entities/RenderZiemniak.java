@@ -2,18 +2,10 @@ package com.zxc74171.thaumicpotatoes.entities;
 
 import javax.annotation.Nonnull;
 
-import net.minecraft.client.model.ModelCreeper;
-import net.minecraft.client.model.ModelDragon;
-import net.minecraft.client.model.ModelGhast;
-import net.minecraft.client.model.ModelLlama;
-import net.minecraft.client.model.ModelParrot;
 import net.minecraft.client.model.ModelSquid;
-import net.minecraft.client.model.ModelWither;
-import net.minecraft.client.model.ModelZombie;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 

@@ -3,10 +3,8 @@ package com.zxc74171.thaumicpotatoes.items;
 import java.util.Map;
 
 import com.google.common.collect.Maps;
-import com.zxc74171.thaumicpotatoes.Reference;
 
 import net.minecraft.item.ItemRecord;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 
 public class ItemMusicDisc extends ItemRecord{

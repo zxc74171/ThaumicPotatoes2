@@ -1,7 +1,5 @@
 package com.zxc74171.thaumicpotatoes.handlers;
 
-import com.zxc74171.thaumicpotatoes.ThaumicPotatoes2;
-import com.zxc74171.thaumicpotatoes.init.ModBlocks;
 import com.zxc74171.thaumicpotatoes.init.ModItems;
 import com.zxc74171.thaumicpotatoes.util.Utils;
 

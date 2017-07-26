@@ -1,28 +1,12 @@
 package com.zxc74171.thaumicpotatoes.guidebooks;
 
-import amerifrance.guideapi.api.GuideAPI;
-import amerifrance.guideapi.api.IGuideBook;
-import amerifrance.guideapi.api.IPage;
-import amerifrance.guideapi.api.impl.Book;
-import amerifrance.guideapi.api.impl.abstraction.CategoryAbstract;
-import amerifrance.guideapi.api.impl.abstraction.EntryAbstract;
-import amerifrance.guideapi.category.CategoryItemStack;
-import amerifrance.guideapi.category.CategoryResourceLocation;
-import amerifrance.guideapi.entry.EntryItemStack;
-import amerifrance.guideapi.page.PageFurnaceRecipe;
-import amerifrance.guideapi.page.PageIRecipe;
-import amerifrance.guideapi.page.PageImage;
-import amerifrance.guideapi.page.PageText;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.oredict.ShapedOreRecipe;
-import net.minecraftforge.oredict.ShapelessOreRecipe;
+import static com.zxc74171.thaumicpotatoes.ThaumicPotatoes2.proxy;
+
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Nonnull;
 
@@ -32,10 +16,25 @@ import com.zxc74171.thaumicpotatoes.Reference;
 import com.zxc74171.thaumicpotatoes.init.ModCreativeTabs;
 import com.zxc74171.thaumicpotatoes.init.ModItems;
 
-import java.awt.*;
-import java.util.*;
-import java.util.List;
-import static com.zxc74171.thaumicpotatoes.ThaumicPotatoes2.proxy;
+import amerifrance.guideapi.api.GuideAPI;
+import amerifrance.guideapi.api.IGuideBook;
+import amerifrance.guideapi.api.IPage;
+import amerifrance.guideapi.api.impl.Book;
+import amerifrance.guideapi.api.impl.abstraction.CategoryAbstract;
+import amerifrance.guideapi.api.impl.abstraction.EntryAbstract;
+import amerifrance.guideapi.category.CategoryResourceLocation;
+import amerifrance.guideapi.entry.EntryItemStack;
+import amerifrance.guideapi.page.PageFurnaceRecipe;
+import amerifrance.guideapi.page.PageIRecipe;
+import amerifrance.guideapi.page.PageImage;
+import amerifrance.guideapi.page.PageText;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 
 @amerifrance.guideapi.api.GuideBook
@@ -100,15 +99,13 @@ public class GuideBookVol1 implements IGuideBook {
  entries = Maps.newLinkedHashMap();
  pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.2.1.1")));
-        pages.add(PageIRecipe.newShaped(new ItemStack(Items.ACACIA_BOAT), "X X", "XXX", 'X', "plankWood"));
         pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTATO_SOUP), "AB ", "C  ", "   ", 'A', Items.BAKED_POTATO, 'B', Items.MILK_BUCKET, 'C', Items.WHEAT_SEEDS));
         entries.put(new ResourceLocation(Reference.MODID, "2.1"), new EntryItemStack(pages, proxy.translateToLocal("entry21"), new ItemStack(ModItems.POTATO_SOUP)));
         
         pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.2.2.1")));
         pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTADOUGH), "KSK", "SKS", "KSK", 'K', Items.BAKED_POTATO, 'S', Items.WHEAT));
-        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.RAVIOLI), "A  ", "B  ", "   ", 'A', ModItems.POTADOUGH, 'B', Items.COOKED_BEEF));
-        pages.add(new PageText(proxy.translateToLocal("guide.2.2.2")));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.RAVIOLI), "AB ", "   ", "   ", 'A', ModItems.POTADOUGH, 'B', "dontLewdTheDragonLoli"));
         entries.put(new ResourceLocation(Reference.MODID, "2.2"), new EntryItemStack(pages, proxy.translateToLocal("entry22"), new ItemStack(ModItems.RAVIOLI)));
              
         categories.add(new CategoryResourceLocation(entries, proxy.translateToLocal("cat2"), new ResourceLocation("thaumicpotatoes:textures/guide/icon_cat2.png")));

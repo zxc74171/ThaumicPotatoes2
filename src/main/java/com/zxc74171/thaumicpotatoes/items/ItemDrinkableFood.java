@@ -3,7 +3,6 @@ package com.zxc74171.thaumicpotatoes.items;
 import com.zxc74171.thaumicpotatoes.Reference;
 import com.zxc74171.thaumicpotatoes.init.ModCreativeTabs;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemFood;

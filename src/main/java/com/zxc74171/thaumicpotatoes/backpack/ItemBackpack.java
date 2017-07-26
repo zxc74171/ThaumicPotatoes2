@@ -1,8 +1,8 @@
 package com.zxc74171.thaumicpotatoes.backpack;
 
-import com.zxc74171.thaumicpotatoes.handlers.GuiHandler;
 import com.zxc74171.thaumicpotatoes.Reference;
 import com.zxc74171.thaumicpotatoes.ThaumicPotatoes2;
+import com.zxc74171.thaumicpotatoes.handlers.GuiHandler;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 
 public class ItemBackpack extends Item {
 
-    public ItemBackpack() {
+	public ItemBackpack() {
         this.setMaxStackSize(1);
         this.setCreativeTab(CreativeTabs.TOOLS);
     }
@@ -31,37 +31,6 @@ public class ItemBackpack extends Item {
         return ActionResult.newResult(EnumActionResult.SUCCESS, item);
     }
 
-    @Override
-    public String getItemStackDisplayName(ItemStack itemStack) {
-        if (itemStack.hasTagCompound() && itemStack.getTagCompound().hasKey("display", 10)) {
-            NBTTagCompound display = itemStack.getTagCompound().getCompoundTag("display");
-            if (display.hasKey("Name")) {
-                return display.getString("Name");
-            }
-        }
-
-        return super.getItemStackDisplayName(itemStack);
-    }
     
-    public boolean hasColor(ItemStack itemStack) {
-        return (itemStack.hasTagCompound() && (itemStack.getTagCompound().hasKey("display", 10) && itemStack.getTagCompound().getCompoundTag("display").hasKey("color", 3)));
-    }
 
-    public int getColor(ItemStack itemStack) {
-        NBTTagCompound nbt = itemStack.getTagCompound();
-        if (nbt != null) {
-            NBTTagCompound nbtDisplay = nbt.getCompoundTag("display");
-            if (nbtDisplay.hasKey("color", 3)) {
-                return nbtDisplay.getInteger("color");
-            }
-        }
-
-        return 10511680;
-    }
-    
-    private void init(String unlocalizedName) {
-        this.setUnlocalizedName("backpack");
-        this.setRegistryName(new ResourceLocation(Reference.MODID, unlocalizedName));
-        this.setCreativeTab(CreativeTabs.FOOD);
-    }
 }

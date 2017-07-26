@@ -1,16 +1,15 @@
 package com.zxc74171.thaumicpotatoes.worldgen;
 
+import java.util.Random;
+
+import com.zxc74171.thaumicpotatoes.ThaumicPotatoes2;
+
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
-
-import java.util.Random;
-
-import com.zxc74171.thaumicpotatoes.ThaumicPotatoes2;
-import com.zxc74171.thaumicpotatoes.init.ModBlocks;
 
 public class TP2WorldGen implements IWorldGenerator{
     @Override

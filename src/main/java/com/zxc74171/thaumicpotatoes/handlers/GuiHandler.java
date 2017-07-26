@@ -1,11 +1,10 @@
 package com.zxc74171.thaumicpotatoes.handlers;
 
-import com.zxc74171.thaumicpotatoes.backpack.GuiBackpack;
-import com.google.common.util.concurrent.Runnables;
 import com.zxc74171.thaumicpotatoes.backpack.ContainerBackpack;
+import com.zxc74171.thaumicpotatoes.backpack.GuiBackpack;
 import com.zxc74171.thaumicpotatoes.backpack.InventoryBackpack;
-import com.zxc74171.thaumicpotatoes.ending.GuiEnding;
 import com.zxc74171.thaumicpotatoes.init.ModItems;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -33,7 +32,6 @@ public class GuiHandler implements IGuiHandler {
     }
 
     private ItemStack getRucksack(EntityPlayer player) {
-        // try to test for mainhand first, if in offhand, it doesn't matter
         if (player.getHeldItemMainhand().getItem() == ModItems.BACKPACK) {
             return player.getHeldItemMainhand();
         }
@@ -44,4 +42,6 @@ public class GuiHandler implements IGuiHandler {
 
         return ItemStack.EMPTY;
     }
+    
+    
 }

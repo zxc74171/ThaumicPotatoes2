@@ -17,13 +17,13 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
-public class RenderEntityPotatoMobProjectile<T extends Entity> extends Render<T>
+public class RenderAmmoBaked<T extends Entity> extends Render<T>
 {
     protected final Item item;
     private RenderItem itemRender = Minecraft.getMinecraft().getRenderItem();
     public static final Factory FACTORY = new Factory();
 
-    public RenderEntityPotatoMobProjectile(RenderManager renderManagerIn, Item itemIn, RenderItem itemRendererIn)
+    public RenderAmmoBaked(RenderManager renderManagerIn, Item itemIn, RenderItem itemRendererIn)
     {
         super(renderManagerIn);
         this.item = itemIn;
@@ -75,12 +75,12 @@ public class RenderEntityPotatoMobProjectile<T extends Entity> extends Render<T>
         return new ResourceLocation("thaumicpotatoes:textures/entity/potatouniversal.png");
     }
     
-    public static class Factory implements IRenderFactory<EntityPotatoMobProjectile> {
+    public static class Factory implements IRenderFactory<EntityAmmoBaked> {
 
         @Override
-        public Render<? super EntityPotatoMobProjectile> createRenderFor(RenderManager manager) {
+        public Render<? super EntityAmmoBaked> createRenderFor(RenderManager manager) {
         	RenderItem itemRender = Minecraft.getMinecraft().getRenderItem();
-            return new RenderEntityPotatoMobProjectile(manager, Items.POTATO, itemRender);
+            return new RenderAmmoBaked(manager, Items.BAKED_POTATO, itemRender);
         }
 
     }

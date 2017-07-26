@@ -1,6 +1,5 @@
 package com.zxc74171.thaumicpotatoes.ending;
 
-import com.google.common.collect.Lists;
 import java.io.BufferedReader;
 import java.io.Closeable;
 import java.io.IOException;
@@ -9,6 +8,12 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Random;
+
+import org.apache.commons.io.IOUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.google.common.collect.Lists;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
@@ -19,13 +24,9 @@ import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.client.resources.IResource;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import org.apache.commons.io.IOUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 @SideOnly(Side.CLIENT)
 public class GuiEnding extends GuiScreen
@@ -73,7 +74,7 @@ public class GuiEnding extends GuiScreen
             this.sendRespawnPacket();
             Minecraft.getMinecraft().getSoundHandler().stopSounds();
             Minecraft.getMinecraft().getSoundHandler().update();
-            System.out.println("Reseting sound");
+            System.out.println("Reloading sound");
         }
     }
 

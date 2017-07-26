@@ -1,13 +1,9 @@
 package com.zxc74171.thaumicpotatoes.entities;
 
-import javax.annotation.Nullable;
-
-import com.zxc74171.thaumicpotatoes.Reference;
 import com.zxc74171.thaumicpotatoes.init.ModItems;
 import com.zxc74171.thaumicpotatoes.sounds.ModSoundEvents;
+import com.zxc74171.thaumicpotatoes.util.PotatoDamageSource;
 
-import net.minecraft.world.BossInfo;
-import net.minecraft.world.BossInfoServer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.MoverType;
@@ -32,9 +28,10 @@ import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.BossInfo;
+import net.minecraft.world.BossInfoServer;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -155,7 +152,7 @@ public class EntityJagaimo extends EntityMob{
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(199.0D);
         this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(40.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(1.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(5.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(1.0D);
         this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(5.0D);
     }
 
@@ -205,8 +202,10 @@ public class EntityJagaimo extends EntityMob{
         if (super.attackEntityAsMob(entityIn)) {
             if (entityIn instanceof EntityLivingBase) {
                 // This zombie gives health boost and regeneration when it attacks
+            	((EntityLivingBase)entityIn).attackEntityFrom(PotatoDamageSource.POTATO, 10.0f);
                 ((EntityLivingBase)entityIn).addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 200));
-                ((EntityLivingBase)entityIn).addPotionEffect(new PotionEffect(MobEffects.WITHER, 200));
+                ((EntityLivingBase)entityIn).addPotionEffect(new PotionEffect(MobEffects.HUNGER, 200));
+                
             }
             return true;
         } else {

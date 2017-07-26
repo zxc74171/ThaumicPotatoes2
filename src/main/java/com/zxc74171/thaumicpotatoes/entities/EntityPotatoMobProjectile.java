@@ -1,9 +1,10 @@
 package com.zxc74171.thaumicpotatoes.entities;
 
+import com.zxc74171.thaumicpotatoes.util.PotatoDamageSource;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.projectile.EntityFireball;
 import net.minecraft.init.MobEffects;
 import net.minecraft.network.datasync.DataParameter;
@@ -105,7 +106,7 @@ public class EntityPotatoMobProjectile extends EntityFireball
                 }
                 else
                 {
-                    result.entityHit.attackEntityFrom(DamageSource.MAGIC, 5.0F);
+                    result.entityHit.attackEntityFrom(PotatoDamageSource.POTATO, 5.0F);
                 }
 
                 if (result.entityHit instanceof EntityLivingBase)
