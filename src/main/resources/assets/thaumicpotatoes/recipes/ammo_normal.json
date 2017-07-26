@@ -1,6 +1,6 @@
 {
   "result": {
-    "item": "thaumicpotatoes:potato_ammo", "count" : 8},
+    "item": "thaumicpotatoes:ammo_normal", "count" : 8},
   "pattern": [
     "PPP",
     "PTP",

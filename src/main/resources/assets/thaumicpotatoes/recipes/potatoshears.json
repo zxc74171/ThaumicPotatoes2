@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:potatoshears"},
+  "pattern": [
+    "CRT",
+    "CPR",
+    "SCC"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "thaumicpotatoes:potatolauncher"},
+    "T": {
+      "item": "thaumicpotatoes:record_farewell"},
+    "C": {
+      "item": "thaumicpotatoes:potatoalloy"},
+    "R": {
+      "item": "thaumicpotatoes:potatorod"},
+    "P": {
+      "item": "thaumicpotatoes:frozenrod"}
+    }
+  
+}

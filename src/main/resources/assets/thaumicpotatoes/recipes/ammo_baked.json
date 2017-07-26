@@ -1,6 +1,6 @@
 {
   "result": {
-    "item": "thaumicpotatoes:ammo_poisonous",
+    "item": "thaumicpotatoes:ammo_baked",
     "count": 8},
 
   "pattern": [
@@ -11,7 +11,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "P": {
-      "item": "minecraft:poisonous_potato"},
+      "item": "minecraft:baked_potato"},
     "T": {
       "item": "minecraft:iron_ingot"}
     }
