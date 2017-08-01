@@ -16,6 +16,7 @@ End game narrative:
 
 Special Thanks:
 			Azanor
+			Bord Listian
 			_Bedrock_Miner_
 			Choonster
 			McJty
@@ -23,6 +24,7 @@ Special Thanks:
 			Paul Fulham
 			TehNut
 			The-Fireplace
+			xalcon
 			PLAYERNAME
 
 Technologies used:
