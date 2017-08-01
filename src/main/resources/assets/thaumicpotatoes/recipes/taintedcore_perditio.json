@@ -1,0 +1,26 @@
+{
+	"result": {
+		"item": "thaumicpotatoes:taintedcore_perditio"
+	},
+	"pattern": [
+		"GEG",
+		"SKS",
+		"GSG"
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"G": {
+			"item": "minecraft:poisonous_potato"
+		},
+		"S": {
+			"item": "thaumicpotatoes:carbonator"
+		},
+		"K": {
+			"item": "thaumicpotatoes:ravioli"
+		},
+		"E": {
+			"item": "minecraft:ender_eye"
+		}
+
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "thaumicpotatoes:eldritchheart", "count" : 2},
+  "ingredients": [
+    {
+      "item": "thaumicpotatoes:eldritchflesh"
+    },
+    {
+      "item": "thaumicpotatoes:eldritchblood"
+    },
+    {
+      "item": "minecraft:potato"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}
