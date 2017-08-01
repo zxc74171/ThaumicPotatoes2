@@ -145,7 +145,7 @@ entry41=披荆斩棘
 entry42=绝对零度
 entry43=狂风呼啸
 entry44=红阳
-entry51=马铃薯主场
+entry51=预兆
 entry52=呼唤
 entry53=镜中人
 entry54=释放渴望
@@ -178,7 +178,7 @@ bosstext_frycook=<Fry Cook> 我们终于见面了。
 
 entity.Jagaimo.name=Jagaimo
 entity.Ziemniak.name=Ziemniak
-entity.FryCook.name=Fry Cook
+entity.FryCook.name=炸厨
 entity.FrenchFries.name=炸薯条
 entity.Villager.thaumicpotatoes.potatovillager=马铃薯爱好者
 
