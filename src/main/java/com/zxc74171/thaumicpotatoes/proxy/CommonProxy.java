@@ -23,6 +23,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class CommonProxy{
 
 	public String translateToLocal(@Nonnull String key, Object... args) {
+		
 		return I18n.translateToLocal(key);
 	}
 	

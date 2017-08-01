@@ -57,7 +57,7 @@ public class GuideBookVol1 implements IGuideBook {
         pages.add(new PageText(proxy.translateToLocal("guide.1.1.2")));
         pages.add(new PageText(proxy.translateToLocal("guide.1.1.3")));
         pages.add(new PageText(proxy.translateToLocal("guide.1.1.4")));
-        entries.put(new ResourceLocation(Reference.MODID, "1.1"), new EntryItemStack(pages, proxy.translateToLocal("entry11"), new ItemStack(Items.FLINT_AND_STEEL)));
+        entries.put(new ResourceLocation(Reference.MODID, "1.1"), new EntryItemStack(pages, proxy.translateToLocal("entry11"), new ItemStack(ModItems.TRUTH)));
         
         pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.1.2.1")));
@@ -89,7 +89,13 @@ public class GuideBookVol1 implements IGuideBook {
         
         entries.put(new ResourceLocation(Reference.MODID, "1.5"), new EntryItemStack(pages, proxy.translateToLocal("entry15"), new ItemStack(ModItems.THAUMIC_POTATO)));
 
+        pages = Lists.newArrayList();
+        pages.add(new PageText(proxy.translateToLocal("guide.1.6.1")));
+        pages.add(new PageImage(new ResourceLocation(Reference.MODID, "textures/guide/villager.png")));
+        pages.add(new PageText(proxy.translateToLocal("guide.1.6.2")));
         
+        entries.put(new ResourceLocation(Reference.MODID, "1.6"), new EntryItemStack(pages, proxy.translateToLocal("entry16"), new ItemStack(Items.EMERALD)));
+
         
         
         List<CategoryAbstract> categories = new ArrayList<CategoryAbstract>();
@@ -104,7 +110,7 @@ public class GuideBookVol1 implements IGuideBook {
         
         pages = Lists.newArrayList();
         pages.add(new PageText(proxy.translateToLocal("guide.2.2.1")));
-        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTADOUGH), "KSK", "SKS", "KSK", 'K', Items.BAKED_POTATO, 'S', Items.WHEAT));
+        pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.POTADOUGH, 2), "KSK", "SKS", "KSK", 'K', Items.BAKED_POTATO, 'S', Items.WHEAT));
         pages.add(PageIRecipe.newShaped(new ItemStack(ModItems.RAVIOLI), "AB ", "   ", "   ", 'A', ModItems.POTADOUGH, 'B', "dontLewdTheDragonLoli"));
         entries.put(new ResourceLocation(Reference.MODID, "2.2"), new EntryItemStack(pages, proxy.translateToLocal("entry22"), new ItemStack(ModItems.RAVIOLI)));
              

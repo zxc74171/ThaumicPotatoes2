@@ -128,7 +128,7 @@ private ItemStack getHeadDrop(EntityLivingBase entity) {
 
     float progress = Math.min(1f, (getMaxItemUseDuration(stack) - timeLeft) / 30f);
     float strength = .1f + 2.5f * progress * progress;
-    float range = 5f;
+    float range = 8f;
 
 
     Vec3d eye = new Vec3d(player.posX, player.posY + player.getEyeHeight(), player.posZ); // Entity.getPositionEyes
@@ -151,7 +151,7 @@ private ItemStack getHeadDrop(EntityLivingBase entity) {
 
       boolean chopHead = progress >= 0.6f;
       if(chopHead) {
-        entity.attackEntityFrom(PotatoDamageSource.POTATO, 200.0f);
+        entity.attackEntityFrom(PotatoDamageSource.POTATO, 150.0f);
         entity.addVelocity(x, y, z);
         ItemStack head = getHeadDrop(entity);
         entity.entityDropItem(head, 0);

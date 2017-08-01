@@ -75,7 +75,7 @@ public class EntityZiemniak extends EntityMob implements IRangedAttackMob
         this.isImmuneToFire = true;
         this.setSize(0.9F, 3.5F);
         ((PathNavigateGround)this.getNavigator()).setCanSwim(true);
-        this.experienceValue = 50;
+        this.experienceValue = 500;
     }
 
     protected void initEntityAI()
@@ -645,7 +645,7 @@ public class EntityZiemniak extends EntityMob implements IRangedAttackMob
      */
     protected void dropFewItems(boolean wasRecentlyHit, int lootingModifier)
     {
-        EntityItem entityitem = this.dropItem(ModItems.TRUTH, 1);
+        EntityItem entityitem = this.dropItem(ModItems.ELDRITCH_BLOOD, 1);
 
         if (entityitem != null)
         {
@@ -681,10 +681,9 @@ public class EntityZiemniak extends EntityMob implements IRangedAttackMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(500.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(300.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.7D);
         this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(40.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(4.0D);
     }
 
     @SideOnly(Side.CLIENT)

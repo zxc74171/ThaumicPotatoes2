@@ -25,6 +25,7 @@ import net.minecraft.init.MobEffects;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.pathfinding.PathNavigateGround;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
@@ -45,7 +46,10 @@ public class EntityJagaimo extends EntityMob{
 
     public EntityJagaimo(World worldIn) {
         super(worldIn);
+        this.isImmuneToFire = true;
         setSize(0.6F, 1.95F);
+        ((PathNavigateGround)this.getNavigator()).setCanSwim(true);
+        this.experienceValue = 200;
     }
     
     private final BossInfoServer bossInfo = (BossInfoServer)(new BossInfoServer(this.getDisplayName(), BossInfo.Color.PURPLE, BossInfo.Overlay.PROGRESS)).setDarkenSky(true);
@@ -131,7 +135,7 @@ public class EntityJagaimo extends EntityMob{
     
     protected void dropFewItems(boolean wasRecentlyHit, int lootingModifier)
     {
-        EntityItem entityitem = this.dropItem(ModItems.ELDRITCH_HEART, 1);
+        EntityItem entityitem = this.dropItem(ModItems.ELDRITCH_FLESH, 1);
 
         if (entityitem != null)
         {

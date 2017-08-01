@@ -12,7 +12,8 @@ import com.zxc74171.thaumicpotatoes.items.ItemMetaSword;
 import com.zxc74171.thaumicpotatoes.items.ItemMusicDisc;
 import com.zxc74171.thaumicpotatoes.items.ItemPotainto;
 import com.zxc74171.thaumicpotatoes.items.ItemPotatoShears;
-import com.zxc74171.thaumicpotatoes.items.ItemTaintedCore;
+import com.zxc74171.thaumicpotatoes.items.ItemTaintedCoreOrdo;
+import com.zxc74171.thaumicpotatoes.items.ItemTaintedCorePerditio;
 import com.zxc74171.thaumicpotatoes.items.ItemThaumicPotato;
 import com.zxc74171.thaumicpotatoes.items.ItemTruth;
 import com.zxc74171.thaumicpotatoes.items.PincerBladesTest;
@@ -35,8 +36,10 @@ public class ModItems {
     
 		public static Item BACKPACK = new ItemBackpack().setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("backpack").setUnlocalizedName("backpack");
 		public static Item TRUTH = new ItemTruth().setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("truth").setUnlocalizedName("truth");
-		public static Item TAINTED_CORE = new ItemTaintedCore().setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("taintedcore")
-				.setUnlocalizedName("taintedcore");
+		public static Item TAINTED_CORE_PERDITIO = new ItemTaintedCorePerditio().setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("taintedcore_perditio")
+				.setUnlocalizedName("taintedcore_perditio");
+		public static Item TAINTED_CORE_ORDO = new ItemTaintedCoreOrdo().setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("taintedcore_ordo")
+				.setUnlocalizedName("taintedcore_ordo");
 		public static  Item POTATOROD = new ItemMetaSword(POTATORODMAT).setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("potatorod").setUnlocalizedName("potatorod");
 		public static  Item FROZENROD = new ItemMetaSword(FROZENRODMAT).setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("frozenrod").setUnlocalizedName("frozenrod");
 		public static  Item POTATOPICKAXE = new ItemMetaPickaxe(POTATOALLOYMAT).setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("potatopickaxe").setUnlocalizedName("potatopickaxe");
@@ -77,13 +80,15 @@ public class ModItems {
 				.setUnlocalizedName("eldritchheart");
 		public static  Item POTADOUGH = new Item().setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("potadough")
 				.setUnlocalizedName("potadough");
-		
-
+		public static  Item ELDRITCH_FLESH = new Item().setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("eldritchflesh")
+				.setUnlocalizedName("eldritchflesh");
+		public static  Item ELDRITCH_BLOOD = new Item().setCreativeTab(ModCreativeTabs.TABS_TP2).setRegistryName("eldritchblood")
+				.setUnlocalizedName("eldritchblood");
 
 		public static  Item RECORD_FAREWELL = new ItemMusicDisc("farewell", ModSoundEvents.FAREWELL).setCreativeTab(ModCreativeTabs.TABS_TP2).setUnlocalizedName("record_farewell").setRegistryName("record_farewell");
 			
 		//DON'T FORGET TO ADD YOUR NEW SHIT HERE DAMMIT
-		public static  Item[] ITEMS = new Item[] {THAUMIC_POTATO, POTATO_ALLOY, BACKPACK, POTATOROD, POTATOPICKAXE, POTATOHOE, POTATOSHOVEL, POTATO_SHEARS, POTATO_LAUNCHER, AMMO_NORMAL, AMMO_POISONOUS, AMMO_BAKED, TAINTED_CORE, PETRIFIED_POTATO, POTATO_SOUP, RAVIOLI, VODKA, FRENCHFRIES, CARBONATOR, MASHEDPOTATOES, POTATO_ALLOY, POTAINTO, ELDRITCH_HEART, POTADOUGH, FROZENROD, RECORD_FAREWELL, TRUTH};
+		public static  Item[] ITEMS = new Item[] {THAUMIC_POTATO, POTATO_ALLOY, BACKPACK, POTATOROD, POTATOPICKAXE, POTATOHOE, POTATOSHOVEL, POTATO_SHEARS, POTATO_LAUNCHER, AMMO_NORMAL, AMMO_POISONOUS, AMMO_BAKED, TAINTED_CORE_PERDITIO, TAINTED_CORE_ORDO, ELDRITCH_FLESH, ELDRITCH_BLOOD, PETRIFIED_POTATO, POTATO_SOUP, RAVIOLI, VODKA, FRENCHFRIES, CARBONATOR, MASHEDPOTATOES, POTAINTO, ELDRITCH_HEART, POTADOUGH, FROZENROD, RECORD_FAREWELL, TRUTH};
 	
 
     
