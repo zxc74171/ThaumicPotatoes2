@@ -1,9 +1,17 @@
 {
     "farewell": {"category": "record", "sounds": [{"name": "thaumicpotatoes:music/farewell", "stream": true}]},
-    "ziemniak_ambient": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:music/ziemniak_ambient", "stream": false}]},
-    "ziemniak_death": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:music/ziemniak_death", "stream": false}]},
-    "ziemniak_hurt": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:music/ziemniak_hurt", "stream": false}]},
-    "poe": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:music/poe", "stream": false}]},
-    "poetaetoe": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:music/poetaetoe", "stream": false}]}
-
+    "ziemniak_ambient": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/ziemniak_ambient", "stream": false}]},
+    "ziemniak_death": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/ziemniak_death", "stream": false}]},
+    "ziemniak_hurt": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/ziemniak_hurt", "stream": false}]},
+    "poe": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/poe", "stream": false}]},
+    "poetaetoe": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/poetaetoe", "stream": false}]},
+    "mcdonald": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/mcdonald", "stream": false}]},
+    "lanlanlu": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/lanlanlu", "stream": false}]},
+    "donaruto": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/donaruto", "stream": false}]},
+    "frycook_ambient": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/frycook_ambient", "stream": false}]},
+    "frycook_hurt": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/frycook_hurt", "stream": false}]},
+    "frycook_death": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/frycook_death", "stream": false}]},
+    "fries_ambient": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/fries_ambient", "stream": false}]},
+    "fries_hurt": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/fries_hurt", "stream": false}]},
+    "fries_death": {"category": "hostile", "sounds": [{"name": "thaumicpotatoes:sounds/fries_death", "stream": false}]}
 }
