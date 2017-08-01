@@ -179,7 +179,7 @@ bosstext_frycook=<Fry Cook> 我们终于见面了。
 entity.Jagaimo.name=Jagaimo
 entity.Ziemniak.name=Ziemniak
 entity.FryCook.name=Fry Cook
-entity.FrenchFries.name=French Fries
+entity.FrenchFries.name=炸薯条
 entity.Villager.thaumicpotatoes.potatovillager=马铃薯爱好者
 
 death.attack.potato=%1$s 马铃薯死去在
