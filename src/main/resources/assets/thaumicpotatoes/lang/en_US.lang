@@ -10,11 +10,14 @@ item.carbonator.name=The Carbonator
 item.potadough.name=Potadough
 item.potainto.name=Potainto
 item.mashedpotatoes.name=Mashed Potatoes
+item.eldritchflesh.name=Flesh of Eldritch
+item.eldritchblood.name=Blood of Eldritch
 item.eldritchheart.name=Heart of Eldritch
 item.potatopickaxe.name=P-Alloy Pickaxe
 item.potatoshovel.name=P-Alloy "Axpade"
 item.potatohoe.name=P-Alloy Hoe
-item.taintedcore.name=Tainted Core
+item.taintedcore_perditio.name=Tainted Core [Perditio]
+item.taintedcore_ordo.name=Tainted Core [Ordo]
 item.potatorod.name=Potato Cleaver
 item.frozenrod.name=Frozen Potato Cleaver
 item.record_farewell.name=Music Disc
@@ -28,6 +31,7 @@ item.ammo_baked.name=Reinforced Baked Potato
 item.potatoshears.name=P-Alloy Tactical Shears
 
 tile.thaumicpotatoes:potatoore.name=Petrified Potato Ore
+tile.thaumicpotatoes:potatobrick.name=Potato Bricks
 
 item.GuideBook.name=Potatonomicon
 itemGroup.thaumicpotatoes=Thaumic Potatoes
@@ -57,6 +61,10 @@ guide.1.5.1=These petrified potatoes are definitely the ones existed before the 
 guide.1.5.3=*Thaumic Potatoes are edible. They give you speed boosts for a short time due to their magical properties, but they are not exactly fulfilling.
 guide.1.5.4=This is exactly what I was looking for. Ancient potatoes with a thaumaturge's emblem seared onto its skin. I can smell it. The smell of thaumaturgy - raw magical power. I'm sure I can apply this material to my new researches and move one step forward to my goal.
 
+guide.1.6.1=Everything had its own dedicated fanbase, and potatoes are no exception.\nPotato Enthusiast is a special type of villager you might come across in villages. They live in their own version of church build with potato bricks, where they preach the goods of potatoes, 
+guide.1.6.2=They devoted their lives to potatoes, wearing the latest popular potato merchandises and even dyed their skins to a potatoey color. They'll pay ridiculous prices for certain potato related items.
+
+guide.1.7.1=You overheard some potato enthusiasts humming a familiar melody.\nMaybe, if you give them a rare enough potato item, they'll agree to trade it with a mixtape of whatever they are singing.
 
 guide.2.1.1=I'm hungry. I just happen to have a lot of potatoes for my thaumaturgical researches, why not put some of them to another use? I can make some simple potato soup with milk and potatoes. It'll definitely be more fulfilling than plain baked potatoes.
 
@@ -85,6 +93,8 @@ guide.3.3.3=The result is amazing. I can fill a whole chest's content into the b
 
 guide.3.4.1=I have been thinking about a way to transform my poisonous potatoes into normal potatoes. Throughout numerous times of experiments, I still haven't figured it out.\nHowever, the oppisite...seems to be achievable.
 guide.3.4.2=I don't think this is useful at all. But hey, maybe it won't be after I found a way to uilize these useless poisonous potatoes?
+
+guide.3.5.1=I found a way to merge regular stone bricks with potatoes. This dramatically increased its blast resistence, compareable to that of obsidian. I also made a variant that emits light by stuffing some glowstone in.
 
 guide.4.1.1=I should be able to make weapons with my newly invented potato alloy as well. This time I will cover a layer of thaumic potatoes on an iron sword. If succeed, the blade should turn way harder and more durable than it ever will be.
 guide.4.1.2=I went overboard and dipped the whole thing into thaumic potatoes. Turns out great. Just like the tools, the sword can now withstand more swings and deal more damage. \nThere's one thing I wonder, where did the bloodstain come from...?
@@ -123,6 +133,8 @@ entry12=A Tuberous Turn
 entry13=Working Wonders
 entry14=Breathing Beneath
 entry15=Resurrection
+entry16=Misfit from Squidville
+entry17=Waving Farewell
 entry21=Boil'em, Mash'em, Stick'em in a stew
 entry22=Ravioli Ravioli
 entry23=Drinkable Essentia
@@ -132,6 +144,7 @@ entry31=Where Metals meet Potatoes
 entry32=Potatools
 entry33=Portable Storage or: How I learned to stop worrying and love the bag
 entry34=Inequivalent Exchange
+entry35=Imperishable Brick
 entry41=Chopping Away
 entry42=Best Served Cold
 entry43=Blasting Off
@@ -162,11 +175,15 @@ bookname2=Potatonomicon Vol.2
 booktitle3=Vol.3 "Revelation"
 bookname3=Potatonomicon Vol.3
 
-bosstext=<Jagaimo> If you would kill for potatoes, then surely you are ready to die for them!
-bosstext2=<Ziemniak> We finally met.
+bosstext_jagaimo=<Jagaimo> If you would kill for potatoes, then surely you are ready to die for them!
+bosstext_ziemniak=<Ziemniak> And it dreamed it destroyed. It dreamed it hunted, and was hunted. It dreamed of potatoes.
+bosstext_frycook=<Fry Cook> We finally met.
 
 entity.Jagaimo.name=Jagaimo
 entity.Ziemniak.name=Ziemniak
+entity.FryCook.name=Fry Cook
+entity.FrenchFries.name=French Fries
+entity.Villager.thaumicpotatoes.potatovillager=Potato Enthusiast
 
 death.attack.potato=%1$s was potatoed to death
 death.attack.potato.%1$s was potatoed to death by %2$s
