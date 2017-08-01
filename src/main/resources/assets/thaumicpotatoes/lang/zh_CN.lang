@@ -182,5 +182,5 @@ entity.FryCook.name=炸厨
 entity.FrenchFries.name=炸薯条
 entity.Villager.thaumicpotatoes.potatovillager=马铃薯爱好者
 
-death.attack.potato=%1$s 马铃薯死去在
-death.attack.potato.%1$s 马铃薯已经死去 %2$s
+death.attack.potato=%1$s 被土豆砸死
+death.attack.potato.%1$s 被 %2$s 以土豆砸死
