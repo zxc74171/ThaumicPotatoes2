@@ -9,21 +9,23 @@ item.frenchfries.name=French Fries
 item.carbonator.name=The Carbonator
 item.potadough.name=Potadough
 item.potainto.name=Potainto
-item.mashedpotatoes.name=Mashed Potato
+item.mashedpotatoes.name=Mashed Potatoes
 item.eldritchheart.name=Heart of Eldritch
 item.potatopickaxe.name=P-Alloy Pickaxe
 item.potatoshovel.name=P-Alloy "Axpade"
 item.potatohoe.name=P-Alloy Hoe
 item.taintedcore.name=Tainted Core
 item.potatorod.name=Potato Cleaver
-item.frozenrod.name=Frozen Potato Rod
+item.frozenrod.name=Frozen Potato Cleaver
 item.record_farewell.name=Music Disc
 item.record.farewell.desc=Thaumic Potatoes 2 OST - Farewell
 item.icon.name=[System]Category Icon
 item.truth.name=Broken Thaumonomicon
 item.potatolauncher.name=Staff of Potatomancy
-item.potato_ammo.name=Reinforced Potato
-item.poisonous_ammo.name=Reinforced Poisonous Potato
+item.ammo_normal.name=Reinforced Potato
+item.ammo_poisonous.name=Reinforced Poisonous Potato
+item.ammo_baked.name=Reinforced Baked Potato
+item.potatoshears.name=P-Alloy Tactical Shears
 
 tile.thaumicpotatoes:potatoore.name=Petrified Potato Ore
 
@@ -58,8 +60,7 @@ guide.1.5.4=This is exactly what I was looking for. Ancient potatoes with a thau
 
 guide.2.1.1=I'm hungry. I just happen to have a lot of potatoes for my thaumaturgical researches, why not put some of them to another use? I can make some simple potato soup with milk and potatoes. It'll definitely be more fulfilling than plain baked potatoes.
 
-guide.2.2.1=I should try some exotic cuisines sometimes. With the starch from potatoes, I should be able to make some better dough by mixing them with some wheat. I'll cut the dough into tiny squares and fill them up with meat. It'll be delicious. 
-guide.2.2.2=*While the previous recipe only shows the usage of steak, you can actually use any kind of cooked meat to stuff your ravioli.
+guide.2.2.1=I should try some exotic cuisines sometimes. With the starch from potatoes, I should be able to make some better dough by mixing them with some wheat. I'll cut the dough into tiny squares and fill them up with meat.\nThat's wicked.
 
 guide.2.3.1=In the past, thaumaturges distill various materials and gather the very basic elements that made up things - essentia. I think I can do the same thing with my potatoes.
 guide.2.3.2=It worked. Though for some strange reason the essentia I distilled don't have to stay in a warded jar to exist, and it seems to be edible. I guess that's an improvement to the old technique, eh? Still, drinking it makes me feel dizzy.
@@ -93,15 +94,17 @@ guide.4.2.2=It's brilliant. The sword does not feel any heavier, but the blows i
 
 guide.4.3.1=As a thaumaturge, I really should start learning some actual spells, rather than relying on those barbaric melee weapons. I have an idea. By channeling the magical power inside potatoes, I might be able to accelerate them to high, deadly velocities.
 guide.4.3.2=However, there's one technical problem: flying at such a high speed, normal potatoes will easily break apart midair. I also need to make harder, more durable potatoes as my projectiles.
-guide.4.3.3=This is it. Finally a stylish magical weapon for me to fend off my enemies.\nThis staff allows rapid fire of high speed potatoes, making ranged battle an ease.\nAdditionally, using Reinforced Poisonous Potatoes as ammos will poison the target.
+guide.4.3.3=This is it. Finally a stylish magical weapon for me to fend off my enemies.\nThis staff allows rapid fire of high speed potatoes, making ranged battle an ease.\nAdditionally, using Reinforced Poisonous Potatoes as ammos will poison the target. Baked ones will set them on fire.
 
+guide.4.4.1=I'm having a problem where I often have to make many pairs of iron shears for various usages. These little clipping blades sure are useful, but they break too quick. If I can attach two pairs of potato cleavers together, maybe I can create a pair of unbreakable shears.
+guide.4.4.2=Here's it. I call it the P-Alloy Tactical Shears. With two potato cleavers as its blades, and various materials for its base and handle, this thing is objectively indestructable.
+guide.4.4.3=It can be used as a pair of shears with unlimited durability. The sharp blades make up for excellent weapons themselves.\nWhat's more, the pincer mechanism of the grip gives thie weapon a special charged attack, which can be unleashed by long holding right click.
+guide.4.4.4=The powerful charged slash of two blades can chop everything apart. It deals massive damage and sends enemies flying.\nAdditonally, if a monster has a choppable head, using this special move to defeat it will always drop its head.\nFailing to fully charge will yield no damage.
+guide.4.4.5=You can still shear your sheep with this thing, but caution should be taken because you might slice it in two.
 
 guide.5.1.1=My head hurts. Could be hangover from too much vodka yesterday, or too much carb in my diet. I don't know. I really don't. It feels like someone is smashing my skull with a hammer. Without the injury but double the pain. I can't breath, in any second I could p a s s
 guide.5.1.2=*When we are going to harvest and in your heart and your mind you feel that you will have to export the potato and you are not going to see it anymore you can taste the sea the church and the sun you can feel that you are eating potatoes
 guide.5.1.3=Two people look at clouds. One see potato. The other see impossible dream. \nIt's the same cloud.
-
-guide.5.2.1=Hours later, I woke up on the floor. There is still a dull pain in my head, but it's nothing compared the what I had before passing out.\nAh yes, the last entry. Who wrote those?
-
 guide.5.3.1=*Someone before me had done this. The very same thing. And I guess, will be the very same outcome. \nYou will be no exception.
 guide.5.3.2=Yeah, the things on the previous page. I have noticed that in many of the entries, I didn't write them by my own. The ideas are mine, but when looking back, some sentences aren't from me.
 guide.5.3.3=It's like someone else is writing this book, adding annotations to things I don't quite understand, or fixing my grammar errors.
@@ -132,8 +135,8 @@ entry34=Inequivalent Exchange
 entry41=Chopping Away
 entry42=Best Served Cold
 entry43=Blasting Off
+entry44=Red Sun
 entry51=Potato Epiphany
-entry52=Awakening
 entry53=The Man in the Mirror
 entry54=Unleashing the Thirst
 entry61=Potato Revelation
@@ -146,6 +149,9 @@ cat4=Bloodlust
 cat5=Sins Of The Father
 cat6=Into The Abyss
 
+tooltipTaintedCore=Outputs a strong, dangerous power. Use with caution.
+tooltipPotainto=This purple potato shakes like a beating heart. Use with caution.
+tooltipTruth=This torn book outputs an extremely strong, but seemingly harmless power. Use in a safe shelter.
 
 booktitle1=Vol.1 "Resurrection"
 bookname1=Potatonomicon Vol.1
@@ -161,3 +167,6 @@ bosstext2=<Ziemniak> We finally met.
 
 entity.Jagaimo.name=Jagaimo
 entity.Ziemniak.name=Ziemniak
+
+death.attack.potato=%1$s was potatoed to death
+death.attack.potato.%1$s was potatoed to death by %2$s
